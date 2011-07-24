@@ -1,10 +1,9 @@
-%define distsuffix edm
 Name: mucommander 
 Version: 0.8.5
 Release: %mkrel 1
 Summary: muCommander is a lightweight, cross-platform file manager
 License: GPL
-Group:   Utility
+Group:   File tools
 
 URL:		http://www.mucommander.com/
 Source0:	mucommander-0.8.5.tar.gz
@@ -14,23 +13,6 @@ BuildArch:      noarch
 Requires:       java-1.6.0-sun
 
 %description
-
-muCommander es un ligero y multiplataforma administrador de archivos con una interfaz de doble panel. Funciona en cualquier sistema operativo con soporte para Java (Mac OS X, Windows, Linux, * BSD, Solaris ...).
- 
-He aquí una lista no exhaustiva de lo que encontrarás en el programa:
-
-*   un sistema de archivos virtual con soporte para los volúmenes locales, FTP, SFTP, SMB, NFS, HTTP, Amazon S3, Hadoop HDFS y Bonjour
-*   permite rápidamente copiar, mover, renombrar archivos, crear directorios, archivos de correo electrónico...
-*   Permite Buscar, comprimir y descomprimir archivos ZIP, RAR, 7z, TAR, GZIP, BZIP2, ISO / NRG, AR / Deb y LST archivos
-*   los archivos ZIP pueden ser modificados sobre la marcha, sin tener que descomprimir todo el archivo
-*   Marcadores Universal y administrador de credenciales de
-*   Soporte para múltiples ventanas
-*   completo acceso desde el teclado 
-*   Altamente configurable
-*   Disponible en 23 idiomas: Inglés américano y británico, francés, alemán, español, checo, chino simplificado y tradicional, polaco, húngaro, ruso, esloveno, rumano, italiano, coreano, portugués de Brasil, neerlandés, eslovaco, japonés, sueco, danés , ucraniano y árabe.
-* es Software Libre (GPL)
-
-(English)
 
 muCommander is a lightweight, cross-platform file manager with a dual-pane interface. It runs on any operating system with Java support (Mac OS X, Windows, Linux, *BSD, Solaris...).
  
