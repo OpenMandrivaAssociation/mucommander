@@ -44,6 +44,7 @@ cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop <<EOF
 Name=muCommander
 GenericName=muCommander
 Comment=File Manager
+Comment[ru]=Файловый менеджер muCommander
 Exec=/usr/bin/mucommander
 Icon=/usr/lib/mucommander/mucommander.png
 Terminal=false
