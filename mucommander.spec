@@ -35,7 +35,7 @@ Here's a non-exhaustive list of what you'll find:
 
 %install
 %__install -dm 755 %{buildroot}/usr/lib
-cp -r $RPM_BUILD_DIR/mucommander $RPM_BUILD_ROOT/usr/lib/
+cp -r %{_builddir}/mucommander $RPM_BUILD_ROOT/usr/lib/
 
 # menu-entry
 mkdir -p %{buildroot}%{_datadir}/applications
