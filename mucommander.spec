@@ -1,14 +1,12 @@
+%define oname muCommander
 Name: mucommander 
-Version: 0.8.5
-Release: %mkrel 1
+Version: 0.9.0
+Release: 1
 Summary: muCommander is a lightweight, cross-platform file manager
 License: GPL
 Group:   File tools
-
 URL:		http://www.mucommander.com/
-Source0:	mucommander-0.8.5.tar.gz
-BuildRoot:	%{_tmppath}/%{name}-%{version}-build
-
+Source0:	http://www.mucommander.com/download/mucommander-0_9_0.tar.gz
 BuildArch:      noarch
 Requires:       java-1.6.0-sun
 
@@ -31,11 +29,11 @@ Here's a non-exhaustive list of what you'll find:
 
 %prep 
 
-%setup -q -n %{name}
+%setup -q -n %{oname}-0_9_0
 
 %install
 %__install -dm 755 %{buildroot}/usr/lib
-cp -r %{_builddir}/mucommander $RPM_BUILD_ROOT/usr/lib/
+cp -r $RPM_BUILD_DIR/%{oname}-0_9_0 $RPM_BUILD_ROOT/usr/lib/%{name}
 
 # menu-entry
 mkdir -p %{buildroot}%{_datadir}/applications
@@ -44,7 +42,6 @@ cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop <<EOF
 Name=muCommander
 GenericName=muCommander
 Comment=File Manager
-Comment[ru]=Файловый менеджер muCommander
 Exec=/usr/bin/mucommander
 Icon=/usr/lib/mucommander/mucommander.png
 Terminal=false
@@ -55,9 +52,7 @@ Categories=Application;Utility;
 EOF
 
 
-%clean
 
-rm -rf $RPM_BUILD_ROOT
 
 %post
 ln -sf /usr/lib/mucommander/mucommander.sh /usr/bin/mucommander
@@ -67,7 +62,7 @@ rm -rf /usr/bin/mucommander
 
 %files
 %defattr(-,root,root)
-/usr/*
+%doc license.txt readme.txt
 /usr/lib/*
 /usr/share/*
 
