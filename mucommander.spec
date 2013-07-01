@@ -2,7 +2,7 @@
 Name: mucommander 
 Version: 0.9.0
 Release: 2
-Summary: muCommander is a lightweight, cross-platform file manager
+Summary: Lightweight, cross-platform file manager
 License: GPL
 Group:   File tools
 URL:		http://www.mucommander.com/
