@@ -1,7 +1,7 @@
 %define oname muCommander
 Name: mucommander 
 Version: 0.9.0
-Release: 2
+Release: 3
 Summary: Lightweight, cross-platform file manager
 License: GPL
 Group:   File tools
@@ -41,7 +41,7 @@ Here's a non-exhaustive list of what you'll find:
 
 %install
 %__install -dm 755 %{buildroot}/usr/lib
-cp -r $RPM_BUILD_DIR/%{oname}-0_9_0 $RPM_BUILD_ROOT/usr/lib/%{name}
+cp -r $RPM_BUILD_DIR/%{oname}-0_9_0 %{buildroot}/usr/lib/%{name}
 
 # menu-entry
 mkdir -p %{buildroot}%{_datadir}/applications
@@ -69,7 +69,6 @@ ln -sf /usr/lib/mucommander/mucommander.sh /usr/bin/mucommander
 rm -f /usr/bin/mucommander
 
 %files
-%defattr(-,root,root)
 %doc license.txt readme.txt
 /usr/lib/*
 /usr/share/*
