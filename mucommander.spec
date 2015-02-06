@@ -1,7 +1,7 @@
 %define oname muCommander
 Name: mucommander 
 Version: 0.9.0
-Release: 3
+Release: 4
 Summary: Lightweight, cross-platform file manager
 License: GPL
 Group:   File tools
