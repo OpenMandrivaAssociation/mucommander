@@ -5,7 +5,7 @@ Release: 4
 Summary: Lightweight, cross-platform file manager
 License: GPL
 Group:   File tools
-URL:		http://www.mucommander.com/
+URL:		https://www.mucommander.com/
 Source0:	http://www.mucommander.com/download/mucommander-0_9_0.tar.gz
 BuildArch:      noarch
 Requires:       java >= 1.6.0
